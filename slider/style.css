@@ -1,0 +1,64 @@
+
+/* スライダー */
+
+.slider-outer{
+  width:100%;
+  margin-top:30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slider{
+  width:100%;
+  display: flex;
+  position: relative;
+}
+.slider > div{
+  width:100%;
+  padding-top:50%;
+  flex: none;
+  position: relative;
+}
+.slider > div img{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  object-fit:fill;
+}
+.slider-outer span{
+  color:#fff;
+  font-size:3em;
+  opacity: .6;
+  cursor: pointer;
+}
+.slider-outer span.prev{
+  position: absolute;
+  left:10px;
+  top:0;
+  bottom:0;
+  margin:auto 0;
+  width:50px;
+  height:50px;
+}
+.slider-outer span.next{
+  position: absolute;
+  right:10px;
+  top:0;
+  bottom:0;
+  margin:auto 0;
+  width:50px;
+  height:50px;
+}
+@media (max-width:580px){
+  .slider-outer span{
+    font-size:2em;
+  }
+  .slider-outer span.prev{
+    left:2px;
+  }
+  .slider-outer span.next{
+    right:0;
+  }
+}
